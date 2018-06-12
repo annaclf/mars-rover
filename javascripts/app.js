@@ -185,7 +185,7 @@ function moveBackward(){
   console.log("moveBackward was called");
   switch(currentDirection){
     case "N":
-    if(rover.CoordY<10){
+    if(rover.coordY<9){
       rover.logThis = true;
       rover.coordY++;
     }
