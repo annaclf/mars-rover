@@ -131,14 +131,12 @@ function turnRight(){
 function moveForward(){
   var currentDirection = rover.direction;
   console.log("moveForward was called");
-  console.log(rover.coordY);
 
   switch(currentDirection){
     case "N":
     if(rover.coordY>0){
       rover.logThis = true;
       rover.coordY--;
-      console.log(rover.coordY);
     }
     else{
       rover.logThis = false;
@@ -187,12 +185,9 @@ function moveBackward(){
   console.log("moveBackward was called");
   switch(currentDirection){
     case "N":
-    console.log(rover.CoordY);
     if(rover.CoordY<10){
       rover.logThis = true;
-      console.log(rover.coordY);
       rover.coordY++;
-      console.log(rover.coordY);
     }
     else{
       rover.logThis = false;
@@ -259,9 +254,6 @@ function moveRover(dirList){
       console.log('Invalid direction, no move was made');
     }
   }
-  rover.travelLog.forEach(function(item,index){
-    console.log(item);
-  })
 }
 function drawStep(cordX, cordY){
   var direction = rover.direction;
@@ -273,7 +265,7 @@ function drawStep(cordX, cordY){
   checkIfPremio(cordX,cordY);
 }
 function updateDir(dir){
-  console.log(dir);
+  console.log("Direction: " +dir);
   $('.direction').text(dir);
 }
 function updateCoords(x,y){
@@ -287,8 +279,6 @@ function showErrorMsg(dir){
   }, 300);
 }
 function checkIfPremio(x,y){
-  console.log(`pink coordx: ${rover.premioCoords.x}, pink coordy: ${rover.premioCoords.y}`);
-  console.log(x,y);
   if(x === rover.premioCoords.x && y===rover.premioCoords.y){
     $('#completed').fadeIn();
     printTravelLog();
@@ -298,12 +288,12 @@ function printTravelLog(){
   var travelLog = rover.travelLog,
       logs = travelLog.length,
       html = "";
-  console.log(travelLog);
   for(var i = 0; i<logs;i++){
     html += `<li>{${travelLog[i]}}</li>`;
   }
   $('#travelLog').append(html);
   $('.attempts').text(logs);
+  console.log("Travel Log: " + travelLog);
 }
 function elPremio(){
   var tableCell = $(".table tr td");
