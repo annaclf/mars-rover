@@ -148,6 +148,8 @@ h2{
     height: 450px;
     border-right: none;
     border-bottom: 1px solid greenyellow;
-
+  }
+  #completed .center-content{
+    width: 80%;
   }
 }
