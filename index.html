@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mars Rover</title>
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/app.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section id="completed">
+    <div class="center-content">
+      <h1>Good work</h1>
+      <h2>Attempts:<span class="attempts"></span></h2>
+      <div class="resume m-t-b">
+        <h3>Log</h3>
+        <ul id="travelLog"></ul>
+      </div>
+      <button class="reset" onclick="resetGame()">Play again</button>
+    </div>
+  </section>
+  <section class="col col-60 br green">
+    <table class="wrap-table center-content">
+      <tr>
+        <td rowspan="10" class="middle">W</td>
+        <td colspan="10" class="center">N</td>
+        <td rowspan="10" class="middle">E</td>
+      </tr>
+      <tr>
+        <td colspan="10">
+          <table class="table" id="board">
+            <tr>
+              <td class="current"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="10" class="center">S</td>
+      </tr>
+    </table>
+  </section>
+  <section class="col col-40">
+    <div class="center-content w-70">
+      <h1>Catch the square</h1>
+      <p class="m-t-b">Figure out how to use the arrow keys on your keyboard to move the green box until catching the pink box.</p>
+      <div class="m-t-b">
+        <h3>Current position</h3>
+        <table>
+          <tr>
+            <td>Direction: </td>
+            <td class="direction">North</td>
+          </tr>
+          <tr>
+            <td>Coords: </td>
+            <td class="coords">0,0</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

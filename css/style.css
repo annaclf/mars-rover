@@ -1,0 +1,142 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+  background:#000;
+  color:#fff;
+}
+h1{
+  font-size: 2rem;
+}
+h2{
+  font-size: 1rem;
+}
+.w-70{
+  width: 70%;
+}
+.m-t-b{
+  margin: 20px 0;
+}
+.center-content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.table{
+  width: 300px;
+  height: 300px;
+  border:1px solid grey;
+}
+.table.S{
+  border-bottom:1px solid red;
+}
+.table.N{
+  border-top:1px solid red;
+}
+.table.W{
+  border-left:1px solid red;
+}
+.table.E{
+  border-right:1px solid red;
+}
+.table td{
+  width: 10%;
+  height: 10%;
+  border:1px solid grey;
+}
+.table td.current{
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-bottom: 13px solid greenyellow;
+}
+.table td.current.N{
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-bottom: 13px solid greenyellow;
+  border-top: none;
+}
+.table td.current.S{
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 13px solid greenyellow;
+  border-bottom: none;
+
+}
+.table td.current.E{
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+  border-left: 13px solid greenyellow;
+}
+.table td.current.W{
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+  border-right: 13px solid greenyellow;
+}
+.center{
+  text-align: center;
+}
+.middle{
+  vertical-align: middle;
+}
+.col{
+  float: left;
+  position: relative;
+  border-right: 1px solid greenyellow;
+  height: 100vh;
+}
+.col-60{
+  width:60%;
+}
+.col-40{
+  width:40%;
+}
+.premio{
+  background:pink;
+}
+#completed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width:100%;
+  background: #000;
+  z-index: 1;
+  display: none;
+}
+#completed .center-content{
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 30px;
+}
+.resume{
+  font-size: 10px;
+  color: greenyellow;
+}
+#travelLog{
+  list-style: none;
+  padding-left: 0;
+  overflow: hidden;
+}
+#travelLog li{
+  display: inline-block;
+  float: left;
+  margin: 0 2px 2px 0;
+  color: greenyellow;
+}
+#travelLog li:nth-child(4n){
+  clear: left;
+}
+.reset{
+  clear: both;
+  padding:10px;
+  background:#fff;
+  color: #000;
+  margin-top: 20px;
+}
+.reset:hover{
+  cursor: pointer;
+  background:#000;
+  color: #fff;
+}
