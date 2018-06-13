@@ -191,6 +191,7 @@ function moveBackward(){
     }
     else{
       rover.logThis = false;
+      showErrorMsg("S");
     }
     break;
     case "W":
@@ -200,6 +201,7 @@ function moveBackward(){
     }
       else{
         rover.logThis = false;
+        showErrorMsg("E");
       }
     break;
     case "S":
@@ -209,6 +211,7 @@ function moveBackward(){
     }
       else{
         rover.logThis = false;
+        showErrorMsg("N");
       }
     break;
     case "E":
@@ -218,6 +221,7 @@ function moveBackward(){
     }
     else{
       rover.logThis = false;
+      showErrorMsg("W");
     }
     break;
   }
